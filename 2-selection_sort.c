@@ -13,11 +13,11 @@ void selection_sort(int *array, size_t size)
 
 	for (x = 0; x < size - 1; x++)
 	{
-		idx = 1;
+		idx = x;
 
 		for (n = x + 1; n < size; n++)
-			if (array[n] < array[idx])
-				idx = n;
+		if (array[n] < array[idx])
+			idx = n;
 		if (idx != x)
 		{
 			swap = array[x];
