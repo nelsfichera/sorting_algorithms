@@ -35,4 +35,7 @@ void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 int swap_backward(listint_t *current, listint_t **list);
 int swap_forward(listint_t *current, listint_t **list);
+void merge_execute(int array[], int first, int mid, int last, int copy[]);
+void merge_split(int *copy, int first, int last, int *array);
+
 #endif
