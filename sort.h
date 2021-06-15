@@ -37,5 +37,6 @@ int swap_backward(listint_t *current, listint_t **list);
 int swap_forward(listint_t *current, listint_t **list);
 void merge_execute(int array[], int first, int mid, int last, int copy[]);
 void merge_split(int *copy, int first, int last, int *array);
-
+void heap_sift(int *array, size_t size, size_t start, size_t end);
+void swap_nodes(int **array, ssize_t index1, ssize_t index2);
 #endif
